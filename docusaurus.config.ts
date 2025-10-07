@@ -45,14 +45,8 @@ const config: Config = {
         highlightSearchTermsOnTargetPage: true,
         language: "en",
         indexDocs: true,
-        docsRouteBasePath: [
-          "/attributions",
-          "/",
-        ],
-        docsDir: [
-          "attributions",
-          "home",
-        ],
+        docsRouteBasePath: ["/attributions", "/"],
+        docsDir: ["attributions", "home"],
       },
     ],
   ],
@@ -120,6 +114,16 @@ const config: Config = {
         src: logo,
       },
       items: [
+        {
+          type: "search",
+          position: "left",
+        },
+        {
+          position: "left",
+          href: "https://github.com/imfsiddiqui/wonders",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
+        },
       ],
     },
     footer: {
