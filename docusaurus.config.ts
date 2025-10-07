@@ -8,6 +8,9 @@ const favicon = "images/favicon.svg";
 const logo = "images/profile.svg";
 const socialCard = "images/social-card.svg";
 const title = "Wonders";
+const author = "Faizan Siddiqui";
+const url = "https://imfsiddiqui.github.io";
+const baseUrl = "/wonders";
 
 const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,8 +18,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: "https://imfsiddiqui.github.io",
-  baseUrl: "/wonders/",
+  url: url,
+  baseUrl: baseUrl + "/",
 
   favicon: favicon,
   title: title,
@@ -68,6 +71,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "attributions",
+        path: "attributions",
+        routeBasePath: "/attributions",
+        sidebarPath: require.resolve("./attributions/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "home",
         path: "home",
         routeBasePath: "/",
@@ -115,20 +129,20 @@ const config: Config = {
       },
       items: [
         {
-          type: "search",
-          position: "left",
-        },
-        {
-          position: "left",
-          href: "https://github.com/imfsiddiqui/wonders",
+          position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
+          href: "https://github.com/imfsiddiqui/wonders",
+        },
+        {
+          type: "search",
+          position: "right",
         },
       ],
     },
     footer: {
       style: "light",
-      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with ❤️ and <a href="/attributions"><strong>these amazing resources</strong></a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${author}.<br>Made with ❤️ and <a href="${baseUrl}/attributions"><strong>these amazing resources</strong></a>.`,
     },
   } satisfies Preset.ThemeConfig,
 };
