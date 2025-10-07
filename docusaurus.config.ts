@@ -19,7 +19,7 @@ const config: Config = {
   },
 
   url: url,
-  baseUrl: baseUrl,
+  baseUrl: baseUrl + "/",
 
   favicon: favicon,
   title: title,
