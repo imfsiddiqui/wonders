@@ -130,9 +130,9 @@ const config: Config = {
       items: [
         {
           position: "right",
-          href: "https://github.com/imfsiddiqui/wonders",
           className: "header-github-link",
           "aria-label": "GitHub repository",
+          href: "https://github.com/imfsiddiqui/wonders",
         },
         {
           type: "search",
