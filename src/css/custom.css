@@ -1,0 +1,135 @@
+/**
+ * Any CSS included here will be global. The Docusaurus classic template bundles
+ * Infima by default. Infima is a CSS framework designed to work well for
+ * content-centric websites.
+ */
+
+/* Import font files */
+@import url("fonts/noto-sans.css");
+@import url("fonts/jetbrains-mono.css");
+
+/* Override the default Infima variables here. */
+:root {
+  /* Infima default colors */
+  --ifm-color-primary: #1877f2;
+  --ifm-color-primary-dark: #166fe5;
+  --ifm-color-primary-darker: #155cc1;
+  --ifm-color-primary-darkest: #0e47a1;
+  --ifm-color-primary-light: #3b88f5;
+  --ifm-color-primary-lighter: #5a9af7;
+  --ifm-color-primary-lightest: #8cbafc;
+
+  /* Highlighted code line background */
+  --docusaurus-highlighted-code-line-bg: rgba(24, 119, 242, 0.1);
+
+  /* Infima default font families */
+  --ifm-font-family-base: "Noto Sans", sans-serif;
+  --ifm-heading-font-family: "Noto Sans", sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", monospace;
+
+  /* Infima default font sizes */
+  --ifm-font-size-base: 17.5px;
+  --ifm-code-font-size: 100%;
+}
+
+/* For readability concerns, choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  /* Infima default colors for dark mode */
+  --ifm-color-primary: #4599ff;
+  --ifm-color-primary-dark: #3983e5;
+  --ifm-color-primary-darker: #306fcc;
+  --ifm-color-primary-darkest: #2457a3;
+  --ifm-color-primary-light: #5ba9ff;
+  --ifm-color-primary-lighter: #7bb9ff;
+  --ifm-color-primary-lightest: #a6ceff;
+
+  /* Highlighted code line background */
+  --docusaurus-highlighted-code-line-bg: rgba(69, 153, 255, 0.2);
+}
+
+/* Custom styles for details elements */
+details.note {
+  --docusaurus-details-decoration-color: var(--ifm-color-secondary-dark);
+  border-color: var(--ifm-color-secondary-dark);
+  background-color: var(--ifm-color-secondary-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-secondary-dark);
+  }
+}
+
+details.tip {
+  --docusaurus-details-decoration-color: var(--ifm-color-success-dark);
+  border-color: var(--ifm-color-success-dark);
+  background-color: var(--ifm-color-success-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-success-dark);
+  }
+}
+
+details.info {
+  --docusaurus-details-decoration-color: var(--ifm-color-info-dark);
+  border-color: var(--ifm-color-info-dark);
+  background-color: var(--ifm-color-info-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-info-dark);
+  }
+}
+
+details.warning {
+  --docusaurus-details-decoration-color: var(--ifm-color-warning-dark);
+  border-color: var(--ifm-color-warning-dark);
+  background-color: var(--ifm-color-warning-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-warning-dark);
+  }
+}
+
+details.danger {
+  --docusaurus-details-decoration-color: var(--ifm-color-danger-dark);
+  border-color: var(--ifm-color-danger-dark);
+  background-color: var(--ifm-color-danger-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-danger-dark);
+  }
+}
+
+.center-content {
+  max-width: 848px;
+  margin: 0 auto;
+}
+
+.center-image-and-caption {
+  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  svg {
+    display: block;
+    margin: auto;
+  }
+  text-align: center;
+  color: var(--ifm-color-emphasis-400);
+}
+
+.center-table {
+  table {
+    display: inline-block;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.no-ligatures {
+  font-variant-ligatures: none;
+}
+
+.reference-text {
+  p {
+    margin: 0;
+    color: var(--ifm-font-color-base);
+  }
+}
