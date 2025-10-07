@@ -16,7 +16,7 @@ const config: Config = {
   },
 
   url: "https://imfsiddiqui.github.io",
-  baseUrl: "/",
+  baseUrl: "/wonders/",
 
   favicon: favicon,
   title: title,
