@@ -15,8 +15,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: "https://faizansiddiqui.me",
-  baseUrl: "/wonders",
+  url: "https://imfsiddiqui.github.io",
+  baseUrl: "/",
 
   favicon: favicon,
   title: title,
