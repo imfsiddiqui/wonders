@@ -15,6 +15,14 @@
 A curated collection of useful tools, apps, libraries, and resources for
 developers, designers, creators, and tech enthusiasts.
 
+<div align="center">
+  <img
+    src="docs/pages/assets/images/banner-standard.svg"
+    style="border-radius: 10px"
+    alt="project banner"
+  />
+</div>
+
 ## 📚 Table of Contents
 
 - [🤩 wonders](#-wonders)
