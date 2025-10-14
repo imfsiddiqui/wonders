@@ -134,10 +134,6 @@ const config: Config = {
           "aria-label": "GitHub repository",
           href: "https://github.com/imfsiddiqui/wonders",
         },
-        {
-          type: "search",
-          position: "right",
-        },
       ],
     },
     footer: {
